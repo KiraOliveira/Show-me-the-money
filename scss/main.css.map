@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,6CAA6C;EAC1D,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,GAAG;EACf,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "main.scss",
+        "_countdown.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
