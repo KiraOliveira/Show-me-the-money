@@ -1,0 +1,55 @@
+.logo-gera {
+    margin: 30px auto;
+    text-align: center;
+
+    img {
+        width: 83px;
+    }
+}
+
+.banner-principal {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
+.banner-texto {
+    width: 40%;
+    z-index: 2;
+
+    h1 {
+        font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-size: 1.25rem;
+        color: $blue;
+
+        span {
+            font-weight: 900;
+        }
+    }
+}
+
+.banner-ilustracao {
+    margin-left: -50px;
+    width: 50%;
+    align-self: flex-end;
+
+    img {
+        width: 184px;
+    }
+}
+
+.banner-ornamento {
+    align-self: center;
+    background-position: bottom;
+
+    img {
+        width: 300px;
+    }
+}
