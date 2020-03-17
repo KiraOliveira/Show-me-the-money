@@ -1,0 +1,169 @@
+html {
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    /*height: 100%; /* Avoid the IE 10-11 `min-height` bug. */
+    background: #E5E5E5;
+  }
+  
+
+/*Botão Quero me cadastrar!*/
+button {
+  background: #4F90F1;
+  width: 250px;
+  height: 44px;
+  border-radius: 48px;
+}
+
+button p {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+
+}
+
+
+/*Cronometro*/
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #373737;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: rgb(72, 75, 74);
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+  /*Imagem Rodapé*/
+  .row img {
+    width: 13px;
+    height: 13px;
+    left: 500px;
+    top: 940px;
+    }
+
+     .row {
+      margin-bottom: 5px;
+     
+     }
+     /*Partes Fixas*/
+     [class*="col-"], /*header, footer, nav, aside, section, div*/[role="main"] {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #f5f5f5;
+      background-color: rgba(86,61,124,.15);
+      border: 1px solid #ddd;
+      border: 1px solid rgba(86,61,124,.2);
+      text-align: center;
+     }
+
+     [class*="col-"], h2 {
+      position: absolute;
+      width: 373px;
+      height: 113px;
+      left: 70px;
+      top: 180px;
+      font-size: 55px;
+      color: #FFFFFF;
+
+     }
+
+    /*Programe-se!*/ /*Olhar de novo não está dando boa o código*/
+    [class*="col-"], h1{
+      /*width: 100px;
+      height: 50px;*/
+      left: 900px;
+      top: 20px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: right;
+
+      color: #FFFFFF;
+     }
+
+    /*Quadro branco*/
+     [class*="col-"], ul{
+      position: absolute;
+      width: 850px;
+      height: 300px;
+      left: 50px;
+      top: 390px;
+      text-align: justify;
+
+      background: #FFFFFF;   
+      border-radius: 30px;                 
+     }
+
+     [class*="col-"], li {
+      list-style: none;
+      left: 228px;
+      top: 1200px;
+      
+
+      font-family: Roboto Condensed;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 37px;
+
+      color: rgba(0, 0, 0, 0.59);
+     }
+
+     .titulo {
+      width: 660px;
+      height: 50px;
+      left: 184px;
+      top: 372px;
+      
+      font-family: Roboto Condensed;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 37px;
+      
+      color: #236CDB;
+     }
+
+     [class*="col-"], header {
+       text-align: center;
+
+     }
+
+     /*Meio*/
+     div[role="main"] {
+      background: #00B78C;
+      width: 1300px;
+      height: 600px;
+     }
+
+     /*Logo final*/
+     .foot {
+       width: 600px;
+     }
+    
+    
+

@@ -1,58 +1,186 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html lang="pt">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
 
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PZP63WN');</script>
+  <!-- End Google Tag Manager -->
 
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PZP63WN');</script>
-    <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./scss/main.css">
+  <link rel="stylesheet" href="scss/estilo1.css">
 
-    <script type="text/javascript" src="js/countdown.js"></script>
-    <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="js/countdown.js"></script>
+  <script type="text/javascript" src="js/modal.js"></script>
 
-    
-    <title>GERA – Ações hoje, gerações amanhã</title>
+
+  <title>GERA – Ações hoje, gerações amanhã</title>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
 </head>
 
 <body>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZP63WN" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZP63WN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-    <div>
-        <p id="demo"></p>
-    </div>
+  <!--<div clas="container">
+    <header class="row">
+      <h3></h3>
+              <div id="clockdiv">
+                <div>
+                  <span class="days"></span>
+                  <div class="smalltext">Dias</div>
+                </div>
+                <div>
+                  <span class="hours"></span>
+                  <div class="smalltext">Horas</div>
+                </div>
+                <div>
+                  <span class="minutes"></span>
+                  <div class="smalltext">Minutos</div>
+                </div>
+                <div>
+                  <span class="seconds"></span>
+                  <div class="smalltext">Segundos</div>
+                </div>
+              </div>
+                
+            
+            </div>
+          </div>
+        
+            <script>
+                function getTimeRemaining(endtime) {
+                var t = Date.parse(endtime) - Date.parse(new Date());
+                var seconds = Math.floor((t / 1000) % 60);
+                var minutes = Math.floor((t / 1000 / 60) % 60);
+                var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+          };
+        }
+        
+        function initializeClock(id, endtime) {
+          var clock = document.getElementById(id);
+          var daysSpan = clock.querySelector('.days');
+          var hoursSpan = clock.querySelector('.hours');
+          var minutesSpan = clock.querySelector('.minutes');
+          var secondsSpan = clock.querySelector('.seconds');
+        
+          function updateClock() {
+            var t = getTimeRemaining(endtime);
+        
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        
+            if (t.total <= 0) {
+              clearInterval(timeinterval);
+            }
+          }
+        
+          updateClock();
+          var timeinterval = setInterval(updateClock, 1000);
+        }
+        
+        var deadline = new Date(Date.parse(new Date()) + 5 * 24 * 60 * 60 * 1000);
+        initializeClock('clockdiv', deadline);
+        
+            </script>
+    </header>-->
 
-<!-- esse primeiro container é a parte escura -->
-    <div id="modal-promocao" class="modal-container">
-<!-- modal de fato  -->
-        <div class="modal">
+
+    <!--<div class="content">-->
+    <div class="row">
+      <div role="main">
+        <!--Conteúdo Principal-->
+        <h2>Meet up!</h2>
+        <button id="add">
+          <p>Quero me cadastrar!</p>
+        </button>
+
+        <h1>PROGRAME-SE!<br>
+          19/02<br>
+          quinta-feira<br>
+          às 20:00h</h1>
+
+          <div>
+            <p id="demo"></p>
+          </div>
+          <h4>Restam</h4>
+
+        <ul>
+          <p class="titulo">O que vamos ver nesse encontro:</p>
+          <li id="img1"><img src="img/GERA-03.png">Qual a diferença entre home office, home based e trabalho remoto?
+          </li><br>
+          <li id="img2"><img src="img/GERA-03.png">Como gerenciar a parte finaceira da minha empresa de forma remota?
+          </li><br>
+          <li id="img3"><img src="img/GERA-03.png">A empresa é obrigada a pagar os custos fixos do funcionário que faz
+            home office?</li><br>
+        </ul>
+
+        
+      
+        <!-- esse primeiro container é a parte escura 
+        <div id="modal-promocao" class="modal-container">
+          <!-- modal de fato  
+          <div class="modal">
             <button class="fechar">x</button>
-            <h3 class="subtitulo">Cadastre-se na Newsletter</h3>
-            <form>
-                <input type="text" class="input" placeholder="Email">
-                <input type="button" class="button" value="Cadastrar">
+            <h3 class="subtitulo">Se liga no assunto<br>
+              é sério.</h3>
+           <!-- <form>
+              <input type="text" class="input" placeholder="Email">
+              <input type="button" class="button" value="Quero me cadastrar!">
             </form>
+
+            <button id="add">
+              <p>Quero me cadastrar!</p>
+            </button>
+
+            <img src="img/foto_final.png">
+
+            <h1 class="Sub">Queremos manter a saúde financeira da sua empresa em dia</h1>
+
+            <h2 class="final">Não estou preocupado</h2>
+
+
+          </div>
         </div>
+      
+      
+        <!-- aplicar: No final, sua tag <a> deverá ficar mais ou menos assim: `<a href=“...” target=“_blank” rel=“noopener noreferrer”>...</a>` -->
+
+        <!--<img src="img/GERA-01.png" class="foot"> -->-->
+
+      </div>
     </div>
 
+    <!--<footer class="row">
+        <img src="img/GERA-01.png"> 
+    </footer>-->
 
-    <!-- aplicar: No final, sua tag <a> deverá ficar mais ou menos assim: `<a href=“...” target=“_blank” rel=“noopener noreferrer”>...</a>` -->
+  </div>
 </body>
 
 </html>
