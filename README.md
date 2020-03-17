@@ -1,10 +1,13 @@
 # Show-me-the-money
 Projeto Semana 3
 
+16/03
+* Criado page para teste de inserção de cronometro e gatilhos.
 
-Criado page para teste de inserção de cronometro e gatilhos.
+* Criado LP não finalizada ainda.
 
+* Iniciado inserção de objetos no Pop Up não finalizado ainda.
 
-Criado LP não finalizada ainda.
+17/03
 
-Iniciado inserção de objetos no Pop Up não finalizado ainda.
+* Finalização de Layout Principal e implementação de Cronometro.
