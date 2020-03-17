@@ -1,22 +1,3 @@
-{/* <div id="clockdiv">
-    <div>
-    <span class="days"></span>
-    <div class="smalltext">Dias</div>
-    </div>
-    <div>
-    <span class="hours"></span>
-    <div class="smalltext">Horas</div>
-    </div>
-    <div>
-    <span class="minutes"></span>
-    <div class="smalltext">Minutos</div>
-    </div>
-    <div>
-    <span class="seconds"></span>
-    <div class="smalltext">Segundos</div>
-    </div>
-</div> */}
-        
             function getTimeRemaining(endtime) {
             var t = Date.parse(endtime) - Date.parse(new Date());
             var seconds = Math.floor((t / 1000) % 60);
