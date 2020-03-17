@@ -1,85 +1,155 @@
-p {
+.logo-gera {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.logo-gera img {
+  width: 83px;
+}
+
+.banner-principal {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vh;
+}
+
+.banner-texto {
+  width: 40%;
+  z-index: 2;
+}
+
+.banner-texto h1 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 35px;
-  text-align: right;
-  font-size: 35px;
-  margin-right: 50px;
-  top: 700px;
-  left: 60px;
-  color: #000000;
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #236CDB;
 }
 
-h3 {
-width: 695px;
-height: 286px;
-left: 969px;
-top: 87px;
-
-font-family: Quicksand;
-font-style: normal;
-font-weight: bold;
-font-size: 72px;
-line-height: 90px;
-text-align: right;
-
-color: #FFFFFF;
+.banner-texto h1 span {
+  font-weight: 900;
 }
 
-.content button {
-    width: 350px;
-    height: 100px;
-    left: 1130px;
-    top: 720px;
-
-    background: #4AD8B7;
-    mix-blend-mode: normal;
-    border-radius: 48px;
+.banner-ilustracao {
+  margin-left: -50px;
+  width: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
-a {
-  width: 614.77px;
-  height: 41.72px;
-  top: 734.17px;
-  left: 1130px;
-
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 57px;
-  text-align: right;
-
-  color: #265EB3;
-
-  mix-blend-mode: normal;
-  transform: rotate(0.07deg);
+.banner-ilustracao img {
+  width: 184px;
 }
 
-img {
-  width: 500px;
-  height: 300px;
-  left: 876px;
-  top: 20px;
-
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-
+.banner-ornamento {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-position: bottom;
 }
 
+.banner-ornamento img {
+  width: 300px;
+}
 
-h3 {
-  width: 426px;
-  height: 61px;
-  left: 1183px;
-  top: 832px;
+.bg-tema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00EAB4;
+  width: 100%;
+  height: 40vh;
+}
 
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: right;
+.tema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-  color: #FFFFFF;
+.tema .linha1 {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #236CDB;
+}
+
+.tema .linha2 {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #236CDB;
+  line-height: 1.9rem;
+}
+
+.tema .linha3 {
+  width: 50%;
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #236CDB;
+  font-size: 1.125rem;
+}
+
+.btn-principal {
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 15px;
+  border: 1px solid #FFF;
+  background-color: #9E57FF;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 .modal-container {
@@ -106,7 +176,7 @@ h3 {
 }
 
 .modal {
-  background-color: #E5E5E5; 
+  background-color: #236CDB;
   width: 60%;
   min-width: 300px;
   padding: 40px;
@@ -168,5 +238,9 @@ h3 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   color: #fff;
+}
+
+* {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

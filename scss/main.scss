@@ -1,2 +1,8 @@
-@import "./countdown";
+@import "./cores";
+@import "./banner-principal";
+@import "./tema";
 @import "./popup-modal";
+
+* {
+    margin: 0;
+}
