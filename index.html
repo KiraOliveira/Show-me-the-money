@@ -1,85 +1,146 @@
 <!DOCTYPE html lang="pt">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
 
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PZP63WN');</script>
-  <!-- End Google Tag Manager -->
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PZP63WN');</script>
+    <!-- End Google Tag Manager -->
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/main.css">
 
-  <script type="text/javascript" src="js/countdown.js"></script>
-  <script type="text/javascript" src="js/modal.js"></script>
+    <!--<script type="text/javascript" src="js/countdown.js"></script>
+    <script type="text/javascript" src="js/countdown_v2.js"></script>-->
+
+    <script type="text/javascript" src="js/modal.js"></script>
 
 
-  <title>GERA – Ações hoje, gerações amanhã</title>
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>GERA – Ações hoje, gerações amanhã</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 
 </head>
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZP63WN" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZP63WN" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 
 
-<!-- header  -->
+    <!-- header  -->
     <header class="logo-gera">
-        <img src="./img/logo-mobile.png" />
+        <img src="img/logo-mobile.png" />
     </header>
-<!-- fim do header  -->
+    <!-- fim do header  -->
 
 
-<!-- banner principal  -->
+    <!-- banner principal  -->
     <div class="banner-principal">
         <div class="banner-texto">
             <h1>O evento que te deixa por dentro do que acontece hoje no <span>mercado digital</span>.</h1>
         </div>
         <div class="banner-ilustracao">
-            <img src="/img/homeoffice.png" />
+            <img src="img/homeoffice.png" />
         </div>
         <div class="banner-ornamento">
-            <img src="/img/ornamento.png" />
+            <img src="img/ornamento.png" />
         </div>
     </div>
-<!-- fim do banner principal  -->
+    <!-- fim do banner principal  -->
 
 
-<!-- tema do evento   -->
+    <!-- tema do evento   -->
     <div class="bg-tema">
         <div class="tema">
             <p class="linha1">Tema 2020:</p>
             <h2 class="linha2">Finanças e<br> home office</h2>
             <p class="linha3">Mantenha a saúde financeira em tempos adversos</p>
-            <button class="btn-principal">quero participar</button>
+            <button class="btn-principal">Quero participar!</button>
         </div>
     </div>
-<!-- fim do tema do evento  -->
 
+    <br>
 
+    <!--CRONOMETRO IMPLEMENTAÇÃO COMPLETA HTML + JS-->
+    <h3>Restam</h3>
+    <div id="clockdiv">
+        <div>
+            <span class="days"></span>
+            <div class="smalltext">Dias</div>
+        </div>
+        <div>
+            <span class="hours"></span>
+            <div class="smalltext">Horas</div>
+        </div>
+        <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutos</div>
+        </div>
+        <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Segundos</div>
+        </div>
+        <script>
+            function getTimeRemaining(endtime) {
+                var t = Date.parse(endtime) - Date.parse(new Date());
+                var seconds = Math.floor((t / 1000) % 60);
+                var minutes = Math.floor((t / 1000 / 60) % 60);
+                var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                return {
+                    'total': t,
+                    'days': days,
+                    'hours': hours,
+                    'minutes': minutes,
+                    'seconds': seconds
+                };
+            }
 
+            function initializeClock(id, endtime) {
+                var clock = document.getElementById(id);
+                var daysSpan = clock.querySelector('.days');
+                var hoursSpan = clock.querySelector('.hours');
+                var minutesSpan = clock.querySelector('.minutes');
+                var secondsSpan = clock.querySelector('.seconds');
 
+                function updateClock() {
+                    var t = getTimeRemaining(endtime);
 
+                    daysSpan.innerHTML = t.days;
+                    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
+                    if (t.total <= 0) {
+                        clearInterval(timeinterval);
+                    }
+                }
 
+                updateClock();
+                var timeinterval = setInterval(updateClock, 1000);
+            }
 
+            var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
+            initializeClock('clockdiv', deadline);
+        </script>
+
+    </div>
+    <!-- fim do tema do evento  -->
 
 </body>
 
