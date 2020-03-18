@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:700|Raleway&display=swap');
 
+.popup-bg {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .popup {
-    position: relative;
-    margin: 5vh 5vw;
     width: 90vw;
     height: 90vh;
     background-color: $blue;
+    // z-index: 999;
+    display: none;
 }
 
 .popup-grid {
@@ -108,6 +120,14 @@
         color: $white;
         text-decoration: none;
     }
+}
+
+.mostrar {
+    display: inline;
+}
+
+.fechar {
+    display: none;
 }
 
 @media (max-width: 670px) {
