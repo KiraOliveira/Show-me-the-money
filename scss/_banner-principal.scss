@@ -3,7 +3,7 @@
     text-align: center;
 
     img {
-        width: 200px;
+        width: 450px;
     }
 }
 
@@ -12,11 +12,10 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     flex-grow: 3;
     justify-content: space-around;
     align-items: center;
-    height: 30vh;
 }
 
 .banner-texto {
@@ -26,7 +25,7 @@
     h1 {
         font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 300;
-        font-size: 1.25rem;
+        font-size: 3rem;
         color: $blue;
 
         span {
@@ -37,11 +36,11 @@
 
 .banner-ilustracao {
     margin-left: -50px;
-    width: 50%;
+    // width: 50%;
     align-self: flex-end;
 
     img {
-        width: 184px;
+        width: 600px;
     }
 }
 
@@ -56,6 +55,14 @@
 }
 
 @media (min-width: 1100px) {
+    .logo-gera {
+        margin: 30px auto 10px;
+        text-align: center;
+    
+        img {
+            width: 250px;
+        }
+    }
     .banner-principal {
         justify-content: center;
         margin: 50px;

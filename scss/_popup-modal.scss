@@ -23,8 +23,8 @@
 .popup-grid {
     display: grid;
     height: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .popup-faixa {
@@ -156,10 +156,6 @@
         display: none;
     }
 
-    .popup-conteudo {
-        // display: flex;
-        // flex-direction: column;
-    }
 
     .popup-conteudo-chamada {
         margin-top: 50px;
