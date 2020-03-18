@@ -11,3 +11,7 @@ Projeto Semana 3
 17/03
 
 * Finalização de Layout Principal e implementação de Cronometro.
+
+* Media Query
+
+* Inserção de link para pagamento.
