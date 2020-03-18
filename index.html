@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/estilo.css">
 
     <script type="text/javascript" src="js/modal.js"></script>
 
@@ -73,7 +73,8 @@
             <h2 class="linha2">Finanças e<br> home office</h2>
             <p class="linha3">Mantenha a saúde financeira em tempos adversos</p>
 
-            <a href="https://www.sympla.com.br/gera-acao-o-movimento-que-voce-precisa-para-que-sua-empresa-nao-pare__824821" target="_blank" rel="noopener roreferrer"><button class="btn-principal">Quero participar!</button></a>
+           <a href="https://www.sympla.com.br/gera-acao-o-movimento-que-voce-precisa-para-que-sua-empresa-nao-pare__824821" target="_blank" rel="noopener roreferrer"><button class="btn-principal">Quero participar!</button></a>
+
         </div>
     </div>
     <!-- fim do tema do evento  -->
@@ -139,7 +140,7 @@
                 var timeinterval = setInterval(updateClock, 1000);
             }
 
-            var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+            var deadline = new Date(Date.parse(new Date()) + 2 * 24 * 60 * 60 * 1000);
             initializeClock('clockdiv', deadline);
         </script>
 
@@ -163,9 +164,35 @@
             <li>A empresa é obrigada a pagar os custos do funcionário que faz home office?</li>
         </ul>
     </div>
-    <!-- fim do box conteúdo  -->
 
-
+    <!-- fim do box conteúdo -->
+    <div class="popup-bg">
+        <div class="popup" id="popup">
+            <div class="popup-grid">
+                <div class="popup-faixa"></div>
+                <div class="popup-image"></div>
+                <div class="popup-conteudo">
+                    <div class="popup-conteudo-chamada">
+                        <p>Se liga no assunto... <span>é sério.</span></p>
+                    </div>
+                    <div class="popup-conteudo-explicacao">
+                        <p>Queremos manter a saúde financeira da sua empresa em dia</p>
+                    </div>
+                    <div class="popup-conteudo-contador">
+                        <p id="demo"></p>
+                    </div>
+                    <div class="popup-conteudo-cat">
+                        <a href="https://www.sympla.com.br/gera-acao-o-movimento-que-voce-precisa-para-que-sua-empresa-nao-pare__824821" target="_blank" rel="noopener roreferrer"><button>Quero participar!</button></a>
+        
+                    </div>
+                    <div class="popup-conteudo-fechar">
+                        <button id="fechar"><a href="#" class="botao">Não estou preocupado</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
 </body>
 
 </html>

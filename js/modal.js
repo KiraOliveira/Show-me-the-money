@@ -1,14 +1,13 @@
-// function iniciaModal(modalID) {
-//     const modal = document.getElementById(modalID);
-//     console.log(modal);
-//     // modal.classList.add('mostrar');
-// }
+const body = document.querySelector('html');
 
-
-const iniciaModal = () => {
-    let modal = document.getElementById("modal-promocao");
-    modal.classList.add("mostrar");
-    return console.log(modal);
+const redirecionamento = () => {
+    const popup =  document.getElementById('popup');
+    const botao = document.getElementById('fechar');
+    popup.classList.add("mostrar");
+    botao.addEventListener("click", (e) => {
+        popup.classList.remove("mostrar");
+        popup.remove();
+    });
 }
 
-document.addEventListener('mouseout', iniciaModal);
+body.addEventListener("mouseleave", redirecionamento);
