@@ -1,5 +1,5 @@
 .logo-gera {
-    margin: 30px auto;
+    margin: 30px auto 10px;
     text-align: center;
 
     img {
@@ -46,10 +46,33 @@
 }
 
 .banner-ornamento {
+    display: none;
     align-self: center;
     background-position: bottom;
 
     img {
         width: 300px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .banner-principal {
+        justify-content: center;
+        margin: 50px;
+        height: max-content;
+    }
+    .banner-texto {
+        h1 {
+            font-size: 1.7rem;
+        }
+    }
+    .banner-ilustracao {
+        margin-left: 50px;
+        // width: 50%;  
+        align-self: flex-end;
+    
+        img {
+            width: 400px;
+        }
     }
 }

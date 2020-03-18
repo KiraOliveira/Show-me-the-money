@@ -5,7 +5,7 @@
     margin: 5vh 5vw;
     width: 90vw;
     height: 90vh;
-    background-color: #E5E5E5;
+    background-color: $blue;
 }
 
 .popup-grid {
@@ -19,7 +19,7 @@
     grid-column: 1 / 5;
     grid-row: 4 / 5;
     align-self: end;
-    background-color: #171717;
+    background-color: $blue;
     width: 100%;
     height: 140px;
 }
@@ -46,24 +46,26 @@
 }
 
 .popup-conteudo-chamada {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2rem;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: $white;
     text-align: right;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 20px;
     span {
-        color: #595959;
-        font-size: 2.5rem;
+        color: $white;
+        font-size: 5rem;
         display: block;
     }
 }
 
 .popup-conteudo-explicacao {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: $white;
+    font-weight: 100;
     text-align: right;
+    width: 50%;
 }
 
 .popup-conteudo-contador {
@@ -71,19 +73,19 @@
 }
 
 #demo {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    color: #767676;
+    color: $green;
     font-weight: bold;
 }
 
 .popup-conteudo-cat {
     margin-bottom: 10px;
     button {
-        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
         text-decoration: none;
-        background-color: #4AD8B7;
+        background-color: $green;
         border-radius: 48px;
         padding: 10px 20px;
         border: 0;
@@ -97,12 +99,113 @@
 .popup-conteudo-fechar {
     button {
         border: 0;
-        background-color: #E5E5E5;
-        font-family: 'Raleway', sans-serif;
+        background-color: rgba(0, 0, 0, 0);
+        font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;    
     }
     a {
-        color: #fff;
+        font-size: .9rem;    
+        color: $white;
         text-decoration: none;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .popup {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: $blue;
+    }
+
+    .popup-grid {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .popup-faixa {
+        display: none;
+    }
+
+    .popup-image {
+        display: none;
+    }
+
+    .popup-conteudo {
+        // display: flex;
+        // flex-direction: column;
+    }
+
+    .popup-conteudo-chamada {
+        margin-top: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+        color: $white;
+        text-align: right;
+        font-weight: 700;
+        margin-bottom: 20px;
+        span {
+            color: $white;
+            font-size: 5rem;
+            display: block;
+        }
+    }
+
+    .popup-conteudo-explicacao {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        color: $white;
+        font-weight: 100;
+        text-align: right;
+        width: 70%;
+    }
+
+    .popup-conteudo-contador {
+        margin: 20px 0;
+    }
+
+    #demo {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        color: $green;
+        font-weight: bold;
+    }
+
+    .popup-conteudo-cat {
+        margin-bottom: 10px;
+        button {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            text-decoration: none;
+            background-color: $green;
+            border-radius: 48px;
+            padding: 10px 20px;
+            border: 0;
+        }
+        a {
+            color: #265EB2;
+            text-decoration: none;
+        }
+    }
+
+    .popup-conteudo-fechar {
+        button {
+            text-align: center;
+            border: 0;
+            margin: 0px 0px 40px 0px;
+            background-color: rgba(0, 0, 0, 0);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;    
+        }
+        a {
+            font-size: .9rem;    
+            color: $white;
+            text-decoration: none;
+        }
     }
 }
