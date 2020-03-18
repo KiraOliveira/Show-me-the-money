@@ -470,13 +470,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 
 .popup {
   width: 90vw;
   height: 90vh;
   background-color: #236CDB;
-  display: none;
 }
 
 .popup-grid {
@@ -609,7 +609,9 @@
 }
 
 .mostrar {
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .fechar {

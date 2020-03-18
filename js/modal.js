@@ -1,12 +1,13 @@
 const body = document.querySelector('html');
 
 const redirecionamento = () => {
+    const bg = document.querySelector('.popup-bg');
     const popup =  document.getElementById('popup');
     const botao = document.getElementById('fechar');
-    popup.classList.add("mostrar");
+    bg.classList.add("mostrar");
     botao.addEventListener("click", (e) => {
-        popup.classList.remove("mostrar");
-        popup.remove();
+        bg.classList.remove("mostrar");
+        bg.remove();
     });
 }
 
