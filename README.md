@@ -15,3 +15,7 @@ Projeto Semana 3
 * Media Query
 
 * Inserção de link para pagamento.
+
+18/03
+
+* Alinhamento do Cronometro.
