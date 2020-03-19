@@ -19,3 +19,7 @@ Projeto Semana 3
 18/03
 
 * Alinhamento do Cronometro.
+
+19/03
+
+* Ajuste da hora do cronometro.
